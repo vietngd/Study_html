@@ -17,17 +17,18 @@ var language = ["Javascript", "PHP", "Ruby", "Dart"];
 // console.log(language.splice(1, 1, "chèn thêm")); // xoa, cat, chen phan tu moi vao mang
 // var language2 = ["C++", "Python"];
 // console.log(language.concat(language2)); //merge 2 mang
-console.log(language.slice(3)); // cat phan tu trong mang
+console.log(language.slice(3)); // cat ra phan tu cuoi trong mang
 console.log(language);
 
 function getLastElement(array) {
-  console.log(array[array.length - 1]);
-  console.log(array.slice(array.length - 1));
-  console.log(array.slice(0, 1));
+  return array[array.length - 1];
+  console.log(array[array.length - 1]); // truy xuat phan tu cuoi trong mang
+  console.log(array.slice(array.length - 1)); // truy xuat phan tu cuoi trong mang
+  console.log(array.slice(0, 1)); // truy xuat phan tu dau tin trong mang
 }
 
 var animals = ["Monkey", "Tiger", "Elephant"];
-var result = getLastElement(animals);
+var result = getLastElement(animals); // animals: doi so , array: tham so; array nhan gia tri cua animals.
 
-console.log(result); // Expected: "Elephant"
+console.log(result);
 console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
